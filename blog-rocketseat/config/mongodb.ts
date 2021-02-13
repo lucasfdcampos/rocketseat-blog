@@ -16,7 +16,7 @@ if (!dbName) {
   throw new Error('Please define the MONGODB_DB variable inside .env.local');
 }
 
-export async function connectToDataBase() {
+export async function connectToDatabase() {
   if (cachedClient && cachedDb) {
     return {
       client: cachedClient,
